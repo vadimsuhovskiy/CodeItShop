@@ -116,42 +116,214 @@
     
 }
 
-.main {
+.menu {
     background: #eeeeee url(../images/menu_bg.png) center no-repeat;
     background-size: cover;
     min-height: 150px;
     display: flex;
     align-items: center;
 }
-.main-title {
+.menu-title {
     color: #222222;
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
 }
-.main-breadcrumbs {
+.menu-breadcrumbs {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
 }
-.main-breadcrumbs__item {
+.menu-breadcrumbs__item {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     color: #222222;
     margin-left: 8px;
 }
-.main-breadcrumbs__item:first-child {
+.menu-breadcrumbs__item:first-child {
     margin-left: 0;
 }
-.main-breadcrumbs__item i {
+.menu-breadcrumbs__item i {
     margin-left: 8px;
 }
-.main-breadcrumbs__item:last-child {    
+.menu-breadcrumbs__item:last-child {    
     color: #888888;
 }
-.main-breadcrumbs__item:last-child i {    
+.menu-breadcrumbs__item:last-child i {    
     display: none;
+}
+
+.main {
+    padding-top: 50px;
+    padding-bottom: 110px;
+    border-bottom: 1px solid #eeeeee;
+}
+.main-filter {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-filter__clear {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #444444;
+    padding: 15px 25px;
+    margin-left: 20px;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;    
+}
+.main-filter__input {
+    height: 100%;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-content {
+    margin-bottom: 30px;
+}
+.main-content__item {
+    margin-bottom: 50px;
+}
+.card {
+    border: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 375px;
+    transition: 0.3s all;    
+}
+.card:hover {
+    background-color: #f6f6f6;
+}
+.card:hover .card__img:after {
+    opacity: 0;
+}
+.card:hover .card-overlay {
+    opacity: 1;
+}
+.card__img {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__img:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #e24545;
+    transition: 0.3s;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+.card-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s; 
+    opacity: 0;   
+}
+.card-overlay__button {
+    padding: 15px 23px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.card__name {
+    margin: 0;
+    margin-top: 22px;
+    margin-bottom: 12px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.card-price__new {
+    color: #e24545;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+}
+.card-price__old {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    margin-left: 10px;
+}
+.card-buttons {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+.card-buttons__trash,
+.card-buttons__basket {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    background: transparent;
+    transition: 0.3s;
+}
+.card-buttons__trash i,
+.card-buttons__basket i {
+    color: #444444;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.card-buttons__trash:hover,
+.card-buttons__basket:hover {
+    background-color: #e24545;
+    border-color: #e24545;
+    cursor: pointer;
+}
+.card-buttons__trash:hover i,
+.card-buttons__basket:hover i {
+    color: #ffffff;
+}
+.main-pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-pagination__btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border: 2px solid #dddddd;
+    background-color: #f6f6f8;
+    color: #888888;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main-pagination__btn:last-child {
+    margin-right: 0;
+}
+.main-pagination__btn.active {
+    border-color:#444444;
+    color: #e24545;
 }
