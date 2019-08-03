@@ -18,6 +18,27 @@ $( document ).ready(function() {
             autoplay: true,
             autoplaySpeed: 3000,
             slidesPerRow: 1,
+            responsive: [
+                {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow: 3,
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
         })
     }
 
@@ -76,7 +97,7 @@ $( document ).ready(function() {
             oldPrice = ''
         }
         return (`
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-4 col-lg-3">
             <div data-id="${item.id}" class="main-content__item card">
                 <div class="card__img">
                     <img src="images/${item.image}.png" alt="Iphone">
