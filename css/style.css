@@ -1,6 +1,10 @@
 * {
     font-family: 'Montserrat',sans-serif;
 }
+.slick-list,
+.slick-track {
+    height: 100%;
+}
 .header {
     min-height: 160px;
     display: flex;
@@ -329,4 +333,59 @@
 .main-pagination__btn.active {
     border-color:#444444;
     color: #e24545;
+}
+
+.advantages {
+    border-bottom: 3px solid #dddddd;
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+.advantages-wrapper {
+    border: 2px solid #444444;
+    display: flex;
+    justify-content: center;
+    min-height: 120px;
+}
+.advantages-wrapper__slider {
+    max-width: 1070px;
+    margin-top: -2px;
+    background: #FFFFFF;
+}
+.advantages-wrapper__slider .slider-item {
+    padding-top: 30px;
+    display: flex;
+    height: 100%;
+}
+.advantages-wrapper__slider .slider-item i {
+    color: #444444;
+    font-size: 32px;
+}
+.slider-item-text {
+    margin-left: 19px;
+    position: relative;
+    margin-bottom: auto;
+}
+.slider-item-text:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #cccccc;
+    bottom: -15px;
+    left: 0;
+}
+.slider-item-text__title {
+    margin: 0;
+    margin-bottom: 13px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.slider-item-text__subtitle {
+    margin: 0;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }

@@ -10,6 +10,17 @@ $( document ).ready(function() {
     let currentPageNumber = 1;
     let clearFilterButton = $('.main-filter__clear');
 
+    function slickSliderInit() {
+        $('.slider').slick({
+            infinity: true,
+            arrows: false,
+            slidesToShow: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesPerRow: 1,
+        })
+    }
+
     function clearPageFilter() {
         $('.main-filter__input').val('')
         filterText = ''
@@ -147,5 +158,7 @@ $( document ).ready(function() {
             filterItems();
         })
     });
+
+    slickSliderInit()
     
 });
