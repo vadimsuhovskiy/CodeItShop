@@ -32,7 +32,7 @@ $( document ).ready(function() {
                   }
                 },
                 {
-                  breakpoint: 480,
+                  breakpoint: 576,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -97,7 +97,7 @@ $( document ).ready(function() {
             oldPrice = ''
         }
         return (`
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div data-id="${item.id}" class="main-content__item card">
                 <div class="card__img">
                     <img src="images/${item.image}.png" alt="Iphone">
