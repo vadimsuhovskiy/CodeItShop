@@ -90,8 +90,8 @@ $( document ).ready(function() {
                         ${oldPrice}                         
                 </div>
                 <div class="card-buttons">
-                        <button class="card-buttons__trash card-remove-btn_js"><i class="fal fa-trash-alt"></i></button>
-                        <button class="card-buttons__basket"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="button card-buttons__trash card-remove-btn_js"><i class="fal fa-trash-alt"></i></button>
+                        <button class="button card-buttons__basket"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
         </div>
