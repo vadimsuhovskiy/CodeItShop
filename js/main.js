@@ -76,7 +76,7 @@ $( document ).ready(function() {
             oldPrice = ''
         }
         return (`
-        <div class="col-3">
+        <div class="col-md-3">
             <div data-id="${item.id}" class="main-content__item card">
                 <div class="card__img">
                     <img src="images/${item.image}.png" alt="Iphone">

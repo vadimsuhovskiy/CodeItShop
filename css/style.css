@@ -351,6 +351,7 @@
     background: #FFFFFF;
 }
 .advantages-wrapper__slider .slider-item {
+    padding: 0 10px;
     padding-top: 30px;
     display: flex;
     height: 100%;
@@ -462,9 +463,13 @@
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .footer-information__copyright strong {
     color: #222222;
+    padding: 0 5px;
 }
 .payment {
     display: flex;
@@ -481,4 +486,13 @@
 }
 .payment-card:first-child {
     margin-left: 0;
+}
+
+@media (min-width: 992px) {
+    .advantages-wrapper__slider .slider-item i {
+        font-size: 24px;
+    }
+    .slider-item-text {
+        margin-left: 8px;
+    }
 }
